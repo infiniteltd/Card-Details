@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- style link -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Card Details</title>
+</head>
+
+<body>
+    <main>
+        <div class="bg-main">
+            <div class="cards-container">
+                <div class="b-card">
+                    <p id="b-card-cvc">000</p>
+                </div>
+                <div class="f-card">
+                    <div class="inner">
+                        <img src="/card-logo.svg" alt="LogoExample" class="f-card-logo">
+                        <p id="number">0000 0000 0000 0000</p>
+                        <div class="name-exp">
+                            <p id="name">Justin Churcher</p>
+                            <p id="exp-date">00/00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-confirmedP-box" id="form-confirmedP-box">
+            <form action="" method="post" id="form">
+                <label for="name">CARDHOLDER NAME</label>
+                <input type="text" id="input-name" placeholder="e.g. Jane seed" name="name" maxlength="30">
+                <span id="nameER"></span>
+                <label for="text">CARD NUMBER</label>
+                <input type="text" id="input-number" placeholder="e.g. 1234 5678 9123 0000" name="number">
+                <span id="numberER"></span>
+                <div class="input-date-cvc">
+                    <div class="date-label">
+                        <label>EXP. DATE (MM/YY)</label><br>
+                        <input type="text" id="input-month" placeholder="MM" name="month">
+                        <input type="text" id="input-year" placeholder="YY" name="year">
+                        <span id="dateER"></span>
+                    </div>
+
+                    <div class="cvc-label">
+                        <label for="cvc">CVC</label><br>
+                        <input type="text" id="input-cvc" placeholder="e.g. 123" name="cvc"><br>
+                        <span id="cvcER"></span>
+                    </div>
+                </div>
+                <input type="submit" id="input-btn" value="Confirm">
+            </form>
+        </div>
+    </main>
+
+    <!-- code tag -->
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">@infiniteltd</a>
+    </div>
+
+    <!-- javascript link -->
+    <script src="app.js"></script>
+</body>
+
+</html>

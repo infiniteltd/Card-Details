@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: url(/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -100;
+    -webkit-tap-highlight-color: transparent;
+}
+
+main {
+    width: 375px;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    z-index: -1;
+}
+
+.bg-main {
+    height: 11.7rem;
+    background-image: url(/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -10;
+
+}
+
+.b-card {
+    background-image: url(/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 14rem;
+    height: 8rem;
+    border-radius: .4rem;
+    position: absolute;
+    z-index: -2;
+    top: 1rem;
+    left: 30%;
+}
+
+#b-card-cvc {
+    color: white;
+    font-size: .45rem;
+    padding-top: 3.6rem;
+    padding-left: 11.5rem;
+    width: fit-content;
+}
+
+.f-card {
+    background-image: url(/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 14rem;
+    height: 8rem;
+    border-radius: .4rem;
+    color: white;
+    position: absolute;
+    top: 5.5rem;
+    left: 5%;
+    box-shadow: 0 20px 50px -20px hsl(274, 5%, 27%);
+
+}
+
+.inner {
+    padding: .7rem 1rem 0 1rem;
+
+}
+
+.f-card-logo {
+    width: 3rem;
+    margin-bottom: 2rem;
+}
+
+#number {
+    font-size: .9rem;
+    letter-spacing: .094rem;
+}
+
+.name-exp {
+    display: flex;
+    justify-content: space-between;
+    font-size: .5rem;
+    margin-top: .5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+    padding-bottom: 1rem;
+
+}
+
+label {
+    font-size: .7rem;
+    color: hsl(278, 68%, 11%);
+    letter-spacing: .1rem;
+    margin-top: 1rem;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    margin-top: .3rem;
+    padding-left: 1rem;
+    height: 2.25rem;
+    border-radius: .5rem;
+    border: solid 1px rgb(190, 187, 187);
+    outline: none;
+}
+
+.input-error {
+    border: hsl(0, 100%, 66%) 1px solid;
+}
+
+span {
+    font-size: .6rem;
+    margin-top: .3rem;
+    color: hsl(0, 100%, 66%);
+}
+
+input::placeholder {
+    color: hsl(270, 3%, 87%);
+}
+
+input:focus {
+    border: 1px solid hsl(249, 99%, 64%);
+}
+
+input:focus~span {
+    visibility: hidden;
+}
+
+
+
+#input-month,
+#input-year {
+    width: 4.25rem;
+}
+
+#input-cvc {
+    width: 8.5rem;
+}
+
+
+.input-date-cvc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+#input-btn {
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    height: 2.8rem;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 1.4rem;
+}
+
+#input-btn:active {
+    background-color: hsl(277, 91%, 5%);
+}
+
+/* for complete page*/
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.content h1 {
+    font-weight: 100;
+    color: hsl(278, 68%, 11%);
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+}
+
+.content p {
+    margin-bottom: 1.7rem;
+    color: hsl(279, 6%, 55%);
+}
+
+#btn-continue {
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    height: 2.8rem;
+    padding: 0;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    border-radius: .5rem;
+    margin-bottom: 5rem;
+}
+
+#btn-continue:active {
+    background-color: hsl(277, 91%, 5%);
+}
+
+@media screen and (min-width: 888px) {
+    body {
+        background-image: url(/bg-main-desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    main {
+        width: 100%;
+        max-width: 1500px;
+        height: 100vh;
+        display: flex;
+    }
+
+    .b-card,
+    .f-card {
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 20rem;
+        height: 10rem;
+    }
+
+    .cards-container {
+        width: 30rem;
+        height: 22rem;
+        position: relative;
+    }
+
+    .b-card {
+        position: relative;
+        top: 12rem;
+        left: 6rem;
+        box-shadow: 25px 20px 100px -50px hsl(274, 4%, 33%);
+
+    }
+
+    #b-card-cvc {
+        font-size: 1rem;
+        padding-top: 4.2rem;
+        padding-left: 15rem;
+    }
+
+    .inner {
+        height: 100%;
+        padding: 1rem 1.2rem 0 1.5rem;
+
+    }
+
+    .f-card-logo {
+        width: 3rem;
+        margin-bottom: 2.5rem;
+
+    }
+
+    #number {
+        font-size: 1.2rem;
+        letter-spacing: .15rem;
+    }
+
+    .name-exp {
+        display: flex;
+        justify-content: space-between;
+        font-size: .85rem;
+        margin-top: .9rem;
+        font-weight: 100;
+        letter-spacing: .1rem;
+    }
+
+    .f-card {
+        position: absolute;
+        top: 0;
+        left: 1rem;
+    }
+
+
+    .bg-main {
+        display: flex;
+        align-items: center;
+        width: 35%;
+        height: 100%;
+        background-image: url(/bg-main-desktop.png);
+    }
+
+    .form-confirmedP-box {
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        margin: 0;
+        padding: 0;
+        width: 18rem;
+        margin-left: 5rem;
+    }
+
+    .content {
+        margin: 0;
+        gap: 0;
+        width: 16rem;
+        margin-left: 4rem;
+    }
+
+    .content img {
+        width: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .content h1 {
+        margin: 0;
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+        letter-spacing: .1rem;
+    }
+
+    .content p {
+        margin: 0;
+        margin-bottom: 1.5rem;
+        font-size: .8rem;
+    }
+
+    #btn-continue {
+        height: 2.3rem;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (min-width: 984px) {
+
+
+    .cards-container {
+        margin-left: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+
+    .cards-container {
+        margin-left: 5rem;
+    }
+
+}
+
+@media screen and (min-width: 1192px) {
+
+
+    .cards-container {
+        margin-left: 11rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+
+    .cards-container {
+        margin-left: 14rem;
+    }
+
+}
